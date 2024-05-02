@@ -1,0 +1,34 @@
+ step-by-step guide for the provided program:
+
+Step 1: Import Required Libraries
+
+Import the necessary libraries: PIL (Python Imaging Library) for handling images and numpy for numerical operations.
+Step 2: Define Encryption Function
+
+Define the encrypt_image function which takes the path of the input image, the encryption key, and the path to save the encrypted image.
+Open the image using PIL and convert it into a numpy array.
+Apply the encryption operation to each pixel by XORing the pixel values with the key.
+Create an encrypted image from the encrypted pixel array and save it.
+Step 3: Define Decryption Function
+
+Define the decrypt_image function which takes the path of the encrypted image, the decryption key, and the path to save the decrypted image.
+Open the encrypted image using PIL and convert it into a numpy array.
+Apply the decryption operation to each pixel by XORing the pixel values with the key.
+Create a decrypted image from the decrypted pixel array and save it.
+Step 4: User Interaction Loop
+
+Start a while loop to repeatedly ask the user whether they want to encrypt, decrypt, or quit.
+If the user chooses to quit, exit the program.
+If the input is neither 'e', 'd', nor 'q', prompt the user to enter a valid choice.
+Ask the user for the image file path, the folder path to save the result, the name for the result file, and the encryption/decryption key.
+Call the appropriate function (encrypt_image or decrypt_image) based on the user's choice, passing the required parameters.
+Step 5: Handle File Paths
+
+Combine the folder path and file name to get the full save path using os.path.join().
+Step 6: Run the Program
+
+Execute the while loop to interact with the user and perform encryption or decryption based on their input.
+Step 7: Finish
+
+After the loop ends, print a message indicating the program's exit.
+This step-by-step guide provides a clear overview of how the program works and how each part contributes to its functionality.
